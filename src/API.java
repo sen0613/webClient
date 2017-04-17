@@ -2,9 +2,9 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.net.URLConnection;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,9 +15,9 @@ public class API {
     public static void main(String[] args) {
 
         try {
-            URL url = new URL("http://api.github.com");
-            HttpURLConnection conn = (HttpURLConnection) url.openConnection();
-            //URLConnection conn = url.openConnection();
+            URL url = new URL("http://api.github.com/users/soongon");
+//            HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+//            URLConnection conn = url.openConnection();
 
 //            String contentType = conn.getContentType();
 //            String encoding = conn.getContentEncoding();
@@ -32,7 +32,7 @@ public class API {
 
 
             while ((line = br.readLine()) != null) {
-                System.out.println(line);
+                System.out.println();
             }
 
 

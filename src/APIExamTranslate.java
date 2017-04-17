@@ -11,7 +11,7 @@ public class APIExamTranslate {
         String clientId = "pHuEW5euav0SoVdRtaCc";//애플리케이션 클라이언트 아이디값";
         String clientSecret = "6Hxlr10bfo";//애플리케이션 클라이언트 시크릿값";
         try {
-            String text = URLEncoder.encode("날씨가 좋네요.", "UTF-8");
+            String text = URLEncoder.encode("유럽여행 하고 싶어요.", "UTF-8");
             String apiURL = "https://openapi.naver.com/v1/language/translate";
             URL url = new URL(apiURL);
             HttpURLConnection con = (HttpURLConnection)url.openConnection();

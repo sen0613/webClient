@@ -10,7 +10,7 @@ public class APIExamSearchBlog {
         String clientId = "pHuEW5euav0SoVdRtaCc";//애플리케이션 클라이언트 아이디값";
         String clientSecret = "6Hxlr10bfo";//애플리케이션 클라이언트 시크릿값";
         try {
-            String text = URLEncoder.encode("날씨", "UTF-8");
+            String text = URLEncoder.encode("사랑", "UTF-8");
             String apiURL = "https://openapi.naver.com/v1/search/blog?query="+ text; // json 결과
             //String apiURL = "https://openapi.naver.com/v1/search/blog.xml?query="+ text; // xml 결과
             URL url = new URL(apiURL);
